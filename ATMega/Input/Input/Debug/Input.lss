@@ -1,0 +1,555 @@
+
+Input.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         0000000a  00800100  0000027a  000002ee  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         0000027a  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  000002f8  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00000328  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000020  00000000  00000000  00000364  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   0000084d  00000000  00000000  00000384  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 0000079e  00000000  00000000  00000bd1  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   000003c0  00000000  00000000  0000136f  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000034  00000000  00000000  00001730  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    000003be  00000000  00000000  00001764  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    0000014b  00000000  00000000  00001b22  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000010  00000000  00000000  00001c6d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	58 c0       	rjmp	.+176    	; 0xb6 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	56 c0       	rjmp	.+172    	; 0xb6 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	54 c0       	rjmp	.+168    	; 0xb6 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	52 c0       	rjmp	.+164    	; 0xb6 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	50 c0       	rjmp	.+160    	; 0xb6 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	4e c0       	rjmp	.+156    	; 0xb6 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	4c c0       	rjmp	.+152    	; 0xb6 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	4a c0       	rjmp	.+148    	; 0xb6 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	48 c0       	rjmp	.+144    	; 0xb6 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	46 c0       	rjmp	.+140    	; 0xb6 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	44 c0       	rjmp	.+136    	; 0xb6 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	42 c0       	rjmp	.+132    	; 0xb6 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	40 c0       	rjmp	.+128    	; 0xb6 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	3e c0       	rjmp	.+124    	; 0xb6 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	3c c0       	rjmp	.+120    	; 0xb6 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	3a c0       	rjmp	.+116    	; 0xb6 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	38 c0       	rjmp	.+112    	; 0xb6 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	36 c0       	rjmp	.+108    	; 0xb6 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	34 c0       	rjmp	.+104    	; 0xb6 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	32 c0       	rjmp	.+100    	; 0xb6 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	30 c0       	rjmp	.+96     	; 0xb6 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	2e c0       	rjmp	.+92     	; 0xb6 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	2c c0       	rjmp	.+88     	; 0xb6 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	2a c0       	rjmp	.+84     	; 0xb6 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	28 c0       	rjmp	.+80     	; 0xb6 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	26 c0       	rjmp	.+76     	; 0xb6 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	24 c0       	rjmp	.+72     	; 0xb6 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	22 c0       	rjmp	.+68     	; 0xb6 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	20 c0       	rjmp	.+64     	; 0xb6 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	1e c0       	rjmp	.+60     	; 0xb6 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	1c c0       	rjmp	.+56     	; 0xb6 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	1a c0       	rjmp	.+52     	; 0xb6 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	18 c0       	rjmp	.+48     	; 0xb6 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	16 c0       	rjmp	.+44     	; 0xb6 <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	ea e7       	ldi	r30, 0x7A	; 122
+  a0:	f2 e0       	ldi	r31, 0x02	; 2
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	aa 30       	cpi	r26, 0x0A	; 10
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+  b2:	02 d0       	rcall	.+4      	; 0xb8 <main>
+  b4:	e0 c0       	rjmp	.+448    	; 0x276 <_exit>
+
+000000b6 <__bad_interrupt>:
+  b6:	a4 cf       	rjmp	.-184    	; 0x0 <__vectors>
+
+000000b8 <main>:
+#include <avr/io.h>
+#include <util/delay.h>
+#include <time.h>
+
+int main()
+{
+  b8:	cf 93       	push	r28
+  ba:	df 93       	push	r29
+  bc:	cd b7       	in	r28, 0x3d	; 61
+  be:	de b7       	in	r29, 0x3e	; 62
+  c0:	2c 97       	sbiw	r28, 0x0c	; 12
+  c2:	0f b6       	in	r0, 0x3f	; 63
+  c4:	f8 94       	cli
+  c6:	de bf       	out	0x3e, r29	; 62
+  c8:	0f be       	out	0x3f, r0	; 63
+  ca:	cd bf       	out	0x3d, r28	; 61
+	unsigned char FND_DATA_TBL[] = {0x3f, 0x06, 0x5b, 0x4f, 0x66, 0x6d,
+  cc:	8a e0       	ldi	r24, 0x0A	; 10
+  ce:	e0 e0       	ldi	r30, 0x00	; 0
+  d0:	f1 e0       	ldi	r31, 0x01	; 1
+  d2:	de 01       	movw	r26, r28
+  d4:	11 96       	adiw	r26, 0x01	; 1
+  d6:	01 90       	ld	r0, Z+
+  d8:	0d 92       	st	X+, r0
+  da:	8a 95       	dec	r24
+  dc:	e1 f7       	brne	.-8      	; 0xd6 <main+0x1e>
+									0x7c, 0x07, 0x7f, 0x67};
+	unsigned int cnt = 0;
+	unsigned int i = 0;
+	DDRA = 0xff;
+  de:	8f ef       	ldi	r24, 0xFF	; 255
+  e0:	8a bb       	out	0x1a, r24	; 26
+	DDRD = 0x0f;
+  e2:	8f e0       	ldi	r24, 0x0F	; 15
+  e4:	81 bb       	out	0x11, r24	; 17
+	PORTA = 0x00;
+  e6:	1b ba       	out	0x1b, r1	; 27
+	PORTD = 0x00;
+  e8:	12 ba       	out	0x12, r1	; 18
+  ea:	8e 01       	movw	r16, r28
+  ec:	0f 5f       	subi	r16, 0xFF	; 255
+  ee:	1f 4f       	sbci	r17, 0xFF	; 255
+
+int main()
+{
+	unsigned char FND_DATA_TBL[] = {0x3f, 0x06, 0x5b, 0x4f, 0x66, 0x6d,
+									0x7c, 0x07, 0x7f, 0x67};
+	unsigned int cnt = 0;
+  f0:	20 e0       	ldi	r18, 0x00	; 0
+  f2:	30 e0       	ldi	r19, 0x00	; 0
+		else if(cnt >= 1000)
+		{
+			for(i=0; i<10000; i++)
+			{
+				DDRD = 0x01;
+				PORTA = FND_DATA_TBL[cnt/1000];
+  f4:	68 ee       	ldi	r22, 0xE8	; 232
+  f6:	66 2e       	mov	r6, r22
+  f8:	63 e0       	ldi	r22, 0x03	; 3
+  fa:	76 2e       	mov	r7, r22
+				DDRD = 0x02;
+				PORTA = FND_DATA_TBL[(cnt%1000)/100];
+  fc:	74 e6       	ldi	r23, 0x64	; 100
+  fe:	e7 2e       	mov	r14, r23
+ 100:	f1 2c       	mov	r15, r1
+				DDRD = 0x04;
+				PORTA = FND_DATA_TBL[(cnt%100)/10];
+ 102:	ea e0       	ldi	r30, 0x0A	; 10
+ 104:	f0 e0       	ldi	r31, 0x00	; 0
+
+		else if(cnt >= 1000)
+		{
+			for(i=0; i<10000; i++)
+			{
+				DDRD = 0x01;
+ 106:	33 24       	eor	r3, r3
+ 108:	33 94       	inc	r3
+				PORTA = FND_DATA_TBL[cnt/1000];
+				DDRD = 0x02;
+ 10a:	a2 e0       	ldi	r26, 0x02	; 2
+ 10c:	4a 2e       	mov	r4, r26
+				PORTA = FND_DATA_TBL[(cnt%1000)/100];
+				DDRD = 0x04;
+ 10e:	b4 e0       	ldi	r27, 0x04	; 4
+ 110:	5b 2e       	mov	r5, r27
+				PORTA = FND_DATA_TBL[(cnt%100)/10];
+				DDRD = 0x08;
+ 112:	48 e0       	ldi	r20, 0x08	; 8
+	PORTA = 0x00;
+	PORTD = 0x00;
+
+	while(1)
+	{
+		if(cnt < 10)
+ 114:	2a 30       	cpi	r18, 0x0A	; 10
+ 116:	31 05       	cpc	r19, r1
+ 118:	68 f4       	brcc	.+26     	; 0x134 <main+0x7c>
+ 11a:	80 e1       	ldi	r24, 0x10	; 16
+ 11c:	97 e2       	ldi	r25, 0x27	; 39
+		{
+			for(i=0; i<10000; i++)
+			{
+				DDRD = 0x08;
+ 11e:	41 bb       	out	0x11, r20	; 17
+				PORTA = FND_DATA_TBL[cnt];
+ 120:	d8 01       	movw	r26, r16
+ 122:	5c 91       	ld	r21, X
+ 124:	5b bb       	out	0x1b, r21	; 27
+ 126:	01 97       	sbiw	r24, 0x01	; 1
+
+	while(1)
+	{
+		if(cnt < 10)
+		{
+			for(i=0; i<10000; i++)
+ 128:	d1 f7       	brne	.-12     	; 0x11e <main+0x66>
+				DDRD = 0x08;
+				PORTA = FND_DATA_TBL[cnt%10];
+			}
+		}
+		
+		cnt++;
+ 12a:	2f 5f       	subi	r18, 0xFF	; 255
+ 12c:	3f 4f       	sbci	r19, 0xFF	; 255
+ 12e:	0f 5f       	subi	r16, 0xFF	; 255
+ 130:	1f 4f       	sbci	r17, 0xFF	; 255
+	}
+ 132:	f0 cf       	rjmp	.-32     	; 0x114 <main+0x5c>
+				DDRD = 0x08;
+				PORTA = FND_DATA_TBL[cnt];
+			}
+		}
+
+		else if(cnt >= 10 && cnt < 100)
+ 134:	c9 01       	movw	r24, r18
+ 136:	0a 97       	sbiw	r24, 0x0a	; 10
+ 138:	8a 35       	cpi	r24, 0x5A	; 90
+ 13a:	91 05       	cpc	r25, r1
+ 13c:	e8 f4       	brcc	.+58     	; 0x178 <main+0xc0>
+		{
+			for(i=0; i<10000; i++)
+			{
+				DDRD = 0x04;
+				PORTA = FND_DATA_TBL[cnt/10];
+ 13e:	c9 01       	movw	r24, r18
+ 140:	bf 01       	movw	r22, r30
+ 142:	85 d0       	rcall	.+266    	; 0x24e <__udivmodhi4>
+				DDRD = 0x08;
+				PORTA = FND_DATA_TBL[cnt%10];
+ 144:	b0 e1       	ldi	r27, 0x10	; 16
+ 146:	ab 2e       	mov	r10, r27
+ 148:	b7 e2       	ldi	r27, 0x27	; 39
+ 14a:	bb 2e       	mov	r11, r27
+		else if(cnt >= 10 && cnt < 100)
+		{
+			for(i=0; i<10000; i++)
+			{
+				DDRD = 0x04;
+				PORTA = FND_DATA_TBL[cnt/10];
+ 14c:	88 24       	eor	r8, r8
+ 14e:	83 94       	inc	r8
+ 150:	91 2c       	mov	r9, r1
+ 152:	8c 0e       	add	r8, r28
+ 154:	9d 1e       	adc	r9, r29
+ 156:	68 0d       	add	r22, r8
+ 158:	79 1d       	adc	r23, r9
+				DDRD = 0x08;
+				PORTA = FND_DATA_TBL[cnt%10];
+ 15a:	88 0d       	add	r24, r8
+ 15c:	99 1d       	adc	r25, r9
+
+		else if(cnt >= 10 && cnt < 100)
+		{
+			for(i=0; i<10000; i++)
+			{
+				DDRD = 0x04;
+ 15e:	51 ba       	out	0x11, r5	; 17
+				PORTA = FND_DATA_TBL[cnt/10];
+ 160:	db 01       	movw	r26, r22
+ 162:	5c 91       	ld	r21, X
+ 164:	5b bb       	out	0x1b, r21	; 27
+				DDRD = 0x08;
+ 166:	41 bb       	out	0x11, r20	; 17
+				PORTA = FND_DATA_TBL[cnt%10];
+ 168:	dc 01       	movw	r26, r24
+ 16a:	5c 91       	ld	r21, X
+ 16c:	5b bb       	out	0x1b, r21	; 27
+ 16e:	b1 e0       	ldi	r27, 0x01	; 1
+ 170:	ab 1a       	sub	r10, r27
+ 172:	b1 08       	sbc	r11, r1
+			}
+		}
+
+		else if(cnt >= 10 && cnt < 100)
+		{
+			for(i=0; i<10000; i++)
+ 174:	a1 f7       	brne	.-24     	; 0x15e <main+0xa6>
+ 176:	d9 cf       	rjmp	.-78     	; 0x12a <main+0x72>
+				DDRD = 0x08;
+				PORTA = FND_DATA_TBL[cnt%10];
+			}
+		}
+
+		else if(cnt >= 100 && cnt < 1000)
+ 178:	c9 01       	movw	r24, r18
+ 17a:	84 56       	subi	r24, 0x64	; 100
+ 17c:	91 09       	sbc	r25, r1
+ 17e:	84 38       	cpi	r24, 0x84	; 132
+ 180:	93 40       	sbci	r25, 0x03	; 3
+ 182:	58 f5       	brcc	.+86     	; 0x1da <main+0x122>
+		{
+			for(i=0; i<10000; i++)
+			{
+				DDRD = 0x02;
+				PORTA = FND_DATA_TBL[cnt/100];
+ 184:	c9 01       	movw	r24, r18
+ 186:	b7 01       	movw	r22, r14
+ 188:	62 d0       	rcall	.+196    	; 0x24e <__udivmodhi4>
+ 18a:	5b 01       	movw	r10, r22
+				DDRD = 0x04;
+				PORTA = FND_DATA_TBL[(cnt%100)/10];
+ 18c:	bf 01       	movw	r22, r30
+ 18e:	5f d0       	rcall	.+190    	; 0x24e <__udivmodhi4>
+ 190:	6b 01       	movw	r12, r22
+				DDRD = 0x08;
+				PORTA = FND_DATA_TBL[cnt%10];
+ 192:	c9 01       	movw	r24, r18
+ 194:	bf 01       	movw	r22, r30
+ 196:	5b d0       	rcall	.+182    	; 0x24e <__udivmodhi4>
+ 198:	60 e1       	ldi	r22, 0x10	; 16
+ 19a:	77 e2       	ldi	r23, 0x27	; 39
+ 19c:	88 24       	eor	r8, r8
+		else if(cnt >= 100 && cnt < 1000)
+		{
+			for(i=0; i<10000; i++)
+			{
+				DDRD = 0x02;
+				PORTA = FND_DATA_TBL[cnt/100];
+ 19e:	83 94       	inc	r8
+ 1a0:	91 2c       	mov	r9, r1
+ 1a2:	8c 0e       	add	r8, r28
+ 1a4:	9d 1e       	adc	r9, r29
+ 1a6:	8a 0c       	add	r8, r10
+ 1a8:	9b 1c       	adc	r9, r11
+ 1aa:	a1 e0       	ldi	r26, 0x01	; 1
+				DDRD = 0x04;
+				PORTA = FND_DATA_TBL[(cnt%100)/10];
+ 1ac:	b0 e0       	ldi	r27, 0x00	; 0
+ 1ae:	ac 0f       	add	r26, r28
+ 1b0:	bd 1f       	adc	r27, r29
+ 1b2:	ca 0e       	add	r12, r26
+ 1b4:	db 1e       	adc	r13, r27
+ 1b6:	8a 0f       	add	r24, r26
+				DDRD = 0x08;
+				PORTA = FND_DATA_TBL[cnt%10];
+ 1b8:	9b 1f       	adc	r25, r27
+ 1ba:	41 ba       	out	0x11, r4	; 17
+
+		else if(cnt >= 100 && cnt < 1000)
+		{
+			for(i=0; i<10000; i++)
+			{
+				DDRD = 0x02;
+ 1bc:	d4 01       	movw	r26, r8
+				PORTA = FND_DATA_TBL[cnt/100];
+ 1be:	5c 91       	ld	r21, X
+ 1c0:	5b bb       	out	0x1b, r21	; 27
+ 1c2:	51 ba       	out	0x11, r5	; 17
+				DDRD = 0x04;
+ 1c4:	d6 01       	movw	r26, r12
+				PORTA = FND_DATA_TBL[(cnt%100)/10];
+ 1c6:	5c 91       	ld	r21, X
+ 1c8:	5b bb       	out	0x1b, r21	; 27
+ 1ca:	41 bb       	out	0x11, r20	; 17
+				DDRD = 0x08;
+ 1cc:	dc 01       	movw	r26, r24
+				PORTA = FND_DATA_TBL[cnt%10];
+ 1ce:	5c 91       	ld	r21, X
+ 1d0:	5b bb       	out	0x1b, r21	; 27
+ 1d2:	61 50       	subi	r22, 0x01	; 1
+ 1d4:	71 09       	sbc	r23, r1
+ 1d6:	89 f7       	brne	.-30     	; 0x1ba <main+0x102>
+			}
+		}
+
+		else if(cnt >= 100 && cnt < 1000)
+		{
+			for(i=0; i<10000; i++)
+ 1d8:	a8 cf       	rjmp	.-176    	; 0x12a <main+0x72>
+		else if(cnt >= 1000)
+		{
+			for(i=0; i<10000; i++)
+			{
+				DDRD = 0x01;
+				PORTA = FND_DATA_TBL[cnt/1000];
+ 1da:	c9 01       	movw	r24, r18
+ 1dc:	b3 01       	movw	r22, r6
+ 1de:	37 d0       	rcall	.+110    	; 0x24e <__udivmodhi4>
+ 1e0:	4b 01       	movw	r8, r22
+				DDRD = 0x02;
+				PORTA = FND_DATA_TBL[(cnt%1000)/100];
+ 1e2:	b7 01       	movw	r22, r14
+ 1e4:	34 d0       	rcall	.+104    	; 0x24e <__udivmodhi4>
+				DDRD = 0x04;
+				PORTA = FND_DATA_TBL[(cnt%100)/10];
+ 1e6:	5b 01       	movw	r10, r22
+ 1e8:	c9 01       	movw	r24, r18
+ 1ea:	b7 01       	movw	r22, r14
+ 1ec:	30 d0       	rcall	.+96     	; 0x24e <__udivmodhi4>
+ 1ee:	bf 01       	movw	r22, r30
+ 1f0:	2e d0       	rcall	.+92     	; 0x24e <__udivmodhi4>
+ 1f2:	6b 01       	movw	r12, r22
+				DDRD = 0x08;
+				PORTA = FND_DATA_TBL[cnt%10];
+ 1f4:	c9 01       	movw	r24, r18
+ 1f6:	bf 01       	movw	r22, r30
+ 1f8:	2a d0       	rcall	.+84     	; 0x24e <__udivmodhi4>
+ 1fa:	60 e1       	ldi	r22, 0x10	; 16
+ 1fc:	77 e2       	ldi	r23, 0x27	; 39
+ 1fe:	a1 e0       	ldi	r26, 0x01	; 1
+		else if(cnt >= 1000)
+		{
+			for(i=0; i<10000; i++)
+			{
+				DDRD = 0x01;
+				PORTA = FND_DATA_TBL[cnt/1000];
+ 200:	b0 e0       	ldi	r27, 0x00	; 0
+ 202:	ac 0f       	add	r26, r28
+ 204:	bd 1f       	adc	r27, r29
+ 206:	a8 0d       	add	r26, r8
+ 208:	b9 1d       	adc	r27, r9
+ 20a:	bc 87       	std	Y+12, r27	; 0x0c
+ 20c:	ab 87       	std	Y+11, r26	; 0x0b
+ 20e:	88 24       	eor	r8, r8
+				DDRD = 0x02;
+				PORTA = FND_DATA_TBL[(cnt%1000)/100];
+ 210:	83 94       	inc	r8
+ 212:	91 2c       	mov	r9, r1
+ 214:	8c 0e       	add	r8, r28
+ 216:	9d 1e       	adc	r9, r29
+ 218:	a8 0c       	add	r10, r8
+ 21a:	b9 1c       	adc	r11, r9
+ 21c:	c8 0c       	add	r12, r8
+				DDRD = 0x04;
+				PORTA = FND_DATA_TBL[(cnt%100)/10];
+ 21e:	d9 1c       	adc	r13, r9
+ 220:	88 0d       	add	r24, r8
+				DDRD = 0x08;
+				PORTA = FND_DATA_TBL[cnt%10];
+ 222:	99 1d       	adc	r25, r9
+ 224:	31 ba       	out	0x11, r3	; 17
+
+		else if(cnt >= 1000)
+		{
+			for(i=0; i<10000; i++)
+			{
+				DDRD = 0x01;
+ 226:	ab 85       	ldd	r26, Y+11	; 0x0b
+				PORTA = FND_DATA_TBL[cnt/1000];
+ 228:	bc 85       	ldd	r27, Y+12	; 0x0c
+ 22a:	5c 91       	ld	r21, X
+ 22c:	5b bb       	out	0x1b, r21	; 27
+ 22e:	41 ba       	out	0x11, r4	; 17
+				DDRD = 0x02;
+ 230:	d5 01       	movw	r26, r10
+				PORTA = FND_DATA_TBL[(cnt%1000)/100];
+ 232:	5c 91       	ld	r21, X
+ 234:	5b bb       	out	0x1b, r21	; 27
+ 236:	51 ba       	out	0x11, r5	; 17
+				DDRD = 0x04;
+ 238:	d6 01       	movw	r26, r12
+				PORTA = FND_DATA_TBL[(cnt%100)/10];
+ 23a:	5c 91       	ld	r21, X
+ 23c:	5b bb       	out	0x1b, r21	; 27
+ 23e:	41 bb       	out	0x11, r20	; 17
+				DDRD = 0x08;
+ 240:	dc 01       	movw	r26, r24
+				PORTA = FND_DATA_TBL[cnt%10];
+ 242:	5c 91       	ld	r21, X
+ 244:	5b bb       	out	0x1b, r21	; 27
+ 246:	61 50       	subi	r22, 0x01	; 1
+ 248:	71 09       	sbc	r23, r1
+ 24a:	61 f7       	brne	.-40     	; 0x224 <main+0x16c>
+			}
+		}
+
+		else if(cnt >= 1000)
+		{
+			for(i=0; i<10000; i++)
+ 24c:	6e cf       	rjmp	.-292    	; 0x12a <main+0x72>
+
+0000024e <__udivmodhi4>:
+ 24e:	aa 1b       	sub	r26, r26
+ 250:	bb 1b       	sub	r27, r27
+ 252:	51 e1       	ldi	r21, 0x11	; 17
+ 254:	07 c0       	rjmp	.+14     	; 0x264 <__udivmodhi4_ep>
+
+00000256 <__udivmodhi4_loop>:
+ 256:	aa 1f       	adc	r26, r26
+ 258:	bb 1f       	adc	r27, r27
+ 25a:	a6 17       	cp	r26, r22
+ 25c:	b7 07       	cpc	r27, r23
+ 25e:	10 f0       	brcs	.+4      	; 0x264 <__udivmodhi4_ep>
+ 260:	a6 1b       	sub	r26, r22
+ 262:	b7 0b       	sbc	r27, r23
+
+00000264 <__udivmodhi4_ep>:
+ 264:	88 1f       	adc	r24, r24
+ 266:	99 1f       	adc	r25, r25
+ 268:	5a 95       	dec	r21
+ 26a:	a9 f7       	brne	.-22     	; 0x256 <__udivmodhi4_loop>
+ 26c:	80 95       	com	r24
+ 26e:	90 95       	com	r25
+ 270:	bc 01       	movw	r22, r24
+ 272:	cd 01       	movw	r24, r26
+ 274:	08 95       	ret
+
+00000276 <_exit>:
+ 276:	f8 94       	cli
+
+00000278 <__stop_program>:
+ 278:	ff cf       	rjmp	.-2      	; 0x278 <__stop_program>

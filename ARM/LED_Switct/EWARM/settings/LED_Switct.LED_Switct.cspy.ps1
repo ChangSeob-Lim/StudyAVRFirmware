@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "C:\DEV\IAR Systems\Embedded Workbench 8.4\common\bin\cspybat" -f "D:\PKNU2020\StudyAVR\ARM\LED_Switct\EWARM\settings\LED_Switct.LED_Switct.general.xcl" --backend -f "D:\PKNU2020\StudyAVR\ARM\LED_Switct\EWARM\settings\LED_Switct.LED_Switct.driver.xcl" 
+& "C:\DEV\IAR Systems\Embedded Workbench 8.4\common\bin\cspybat" -f "D:\PKNU2020\StudyAVRFirmware\ARM\LED_Switct\EWARM\settings\LED_Switct.LED_Switct.general.xcl" --backend -f "D:\PKNU2020\StudyAVRFirmware\ARM\LED_Switct\EWARM\settings\LED_Switct.LED_Switct.driver.xcl" 
 }
 else
 {
-& "C:\DEV\IAR Systems\Embedded Workbench 8.4\common\bin\cspybat" -f "D:\PKNU2020\StudyAVR\ARM\LED_Switct\EWARM\settings\LED_Switct.LED_Switct.general.xcl" --debug_file=$debugfile --backend -f "D:\PKNU2020\StudyAVR\ARM\LED_Switct\EWARM\settings\LED_Switct.LED_Switct.driver.xcl" 
+& "C:\DEV\IAR Systems\Embedded Workbench 8.4\common\bin\cspybat" -f "D:\PKNU2020\StudyAVRFirmware\ARM\LED_Switct\EWARM\settings\LED_Switct.LED_Switct.general.xcl" --debug_file=$debugfile --backend -f "D:\PKNU2020\StudyAVRFirmware\ARM\LED_Switct\EWARM\settings\LED_Switct.LED_Switct.driver.xcl" 
 }

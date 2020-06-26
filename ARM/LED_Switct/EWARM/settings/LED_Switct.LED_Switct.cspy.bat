@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"C:\DEV\IAR Systems\Embedded Workbench 8.4\common\bin\cspybat" -f "D:\PKNU2020\StudyAVR\ARM\LED_Switct\EWARM\settings\LED_Switct.LED_Switct.general.xcl" --backend -f "D:\PKNU2020\StudyAVR\ARM\LED_Switct\EWARM\settings\LED_Switct.LED_Switct.driver.xcl" 
+"C:\DEV\IAR Systems\Embedded Workbench 8.4\common\bin\cspybat" -f "D:\PKNU2020\StudyAVRFirmware\ARM\LED_Switct\EWARM\settings\LED_Switct.LED_Switct.general.xcl" --backend -f "D:\PKNU2020\StudyAVRFirmware\ARM\LED_Switct\EWARM\settings\LED_Switct.LED_Switct.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"C:\DEV\IAR Systems\Embedded Workbench 8.4\common\bin\cspybat" -f "D:\PKNU2020\StudyAVR\ARM\LED_Switct\EWARM\settings\LED_Switct.LED_Switct.general.xcl" "--debug_file=%~1" --backend -f "D:\PKNU2020\StudyAVR\ARM\LED_Switct\EWARM\settings\LED_Switct.LED_Switct.driver.xcl" 
+"C:\DEV\IAR Systems\Embedded Workbench 8.4\common\bin\cspybat" -f "D:\PKNU2020\StudyAVRFirmware\ARM\LED_Switct\EWARM\settings\LED_Switct.LED_Switct.general.xcl" "--debug_file=%~1" --backend -f "D:\PKNU2020\StudyAVRFirmware\ARM\LED_Switct\EWARM\settings\LED_Switct.LED_Switct.driver.xcl" 
 
 @echo off 
 :end

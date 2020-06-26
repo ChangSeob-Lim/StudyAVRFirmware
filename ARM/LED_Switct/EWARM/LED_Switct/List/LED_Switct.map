@@ -1,42 +1,42 @@
 ###############################################################################
 #
-# IAR ELF Linker V8.50.4.261/W32 for ARM                  22/Jun/2020  11:44:39
+# IAR ELF Linker V8.50.4.261/W32 for ARM                  24/Jun/2020  11:58:16
 # Copyright 2007-2020 IAR Systems AB.
 #
 #    Output file  =
-#        D:\PKNU2020\StudyAVR\ARM\LED_Switct\EWARM\LED_Switct\Exe\LED_Switct.out
+#        D:\PKNU2020\StudyAVRFirmware\ARM\LED_Switct\EWARM\LED_Switct\Exe\LED_Switct.out
 #    Map file     =
-#        D:\PKNU2020\StudyAVR\ARM\LED_Switct\EWARM\LED_Switct\List\LED_Switct.map
+#        D:\PKNU2020\StudyAVRFirmware\ARM\LED_Switct\EWARM\LED_Switct\List\LED_Switct.map
 #    Command line =
-#        -f C:\Users\PKNU\AppData\Local\Temp\EW76C6.tmp
-#        (D:\PKNU2020\StudyAVR\ARM\LED_Switct\EWARM\LED_Switct\Obj\gpio.o
-#        D:\PKNU2020\StudyAVR\ARM\LED_Switct\EWARM\LED_Switct\Obj\main.o
-#        D:\PKNU2020\StudyAVR\ARM\LED_Switct\EWARM\LED_Switct\Obj\startup_stm32f405xx.o
-#        D:\PKNU2020\StudyAVR\ARM\LED_Switct\EWARM\LED_Switct\Obj\stm32f4xx_hal.o
-#        D:\PKNU2020\StudyAVR\ARM\LED_Switct\EWARM\LED_Switct\Obj\stm32f4xx_hal_cortex.o
-#        D:\PKNU2020\StudyAVR\ARM\LED_Switct\EWARM\LED_Switct\Obj\stm32f4xx_hal_dma.o
-#        D:\PKNU2020\StudyAVR\ARM\LED_Switct\EWARM\LED_Switct\Obj\stm32f4xx_hal_dma_ex.o
-#        D:\PKNU2020\StudyAVR\ARM\LED_Switct\EWARM\LED_Switct\Obj\stm32f4xx_hal_exti.o
-#        D:\PKNU2020\StudyAVR\ARM\LED_Switct\EWARM\LED_Switct\Obj\stm32f4xx_hal_flash.o
-#        D:\PKNU2020\StudyAVR\ARM\LED_Switct\EWARM\LED_Switct\Obj\stm32f4xx_hal_flash_ex.o
-#        D:\PKNU2020\StudyAVR\ARM\LED_Switct\EWARM\LED_Switct\Obj\stm32f4xx_hal_flash_ramfunc.o
-#        D:\PKNU2020\StudyAVR\ARM\LED_Switct\EWARM\LED_Switct\Obj\stm32f4xx_hal_gpio.o
-#        D:\PKNU2020\StudyAVR\ARM\LED_Switct\EWARM\LED_Switct\Obj\stm32f4xx_hal_msp.o
-#        D:\PKNU2020\StudyAVR\ARM\LED_Switct\EWARM\LED_Switct\Obj\stm32f4xx_hal_pwr.o
-#        D:\PKNU2020\StudyAVR\ARM\LED_Switct\EWARM\LED_Switct\Obj\stm32f4xx_hal_pwr_ex.o
-#        D:\PKNU2020\StudyAVR\ARM\LED_Switct\EWARM\LED_Switct\Obj\stm32f4xx_hal_rcc.o
-#        D:\PKNU2020\StudyAVR\ARM\LED_Switct\EWARM\LED_Switct\Obj\stm32f4xx_hal_rcc_ex.o
-#        D:\PKNU2020\StudyAVR\ARM\LED_Switct\EWARM\LED_Switct\Obj\stm32f4xx_hal_tim.o
-#        D:\PKNU2020\StudyAVR\ARM\LED_Switct\EWARM\LED_Switct\Obj\stm32f4xx_hal_tim_ex.o
-#        D:\PKNU2020\StudyAVR\ARM\LED_Switct\EWARM\LED_Switct\Obj\stm32f4xx_it.o
-#        D:\PKNU2020\StudyAVR\ARM\LED_Switct\EWARM\LED_Switct\Obj\system_stm32f4xx.o
+#        -f C:\Users\PKNU\AppData\Local\Temp\EWEDA.tmp
+#        (D:\PKNU2020\StudyAVRFirmware\ARM\LED_Switct\EWARM\LED_Switct\Obj\gpio.o
+#        D:\PKNU2020\StudyAVRFirmware\ARM\LED_Switct\EWARM\LED_Switct\Obj\main.o
+#        D:\PKNU2020\StudyAVRFirmware\ARM\LED_Switct\EWARM\LED_Switct\Obj\startup_stm32f405xx.o
+#        D:\PKNU2020\StudyAVRFirmware\ARM\LED_Switct\EWARM\LED_Switct\Obj\stm32f4xx_hal.o
+#        D:\PKNU2020\StudyAVRFirmware\ARM\LED_Switct\EWARM\LED_Switct\Obj\stm32f4xx_hal_cortex.o
+#        D:\PKNU2020\StudyAVRFirmware\ARM\LED_Switct\EWARM\LED_Switct\Obj\stm32f4xx_hal_dma.o
+#        D:\PKNU2020\StudyAVRFirmware\ARM\LED_Switct\EWARM\LED_Switct\Obj\stm32f4xx_hal_dma_ex.o
+#        D:\PKNU2020\StudyAVRFirmware\ARM\LED_Switct\EWARM\LED_Switct\Obj\stm32f4xx_hal_exti.o
+#        D:\PKNU2020\StudyAVRFirmware\ARM\LED_Switct\EWARM\LED_Switct\Obj\stm32f4xx_hal_flash.o
+#        D:\PKNU2020\StudyAVRFirmware\ARM\LED_Switct\EWARM\LED_Switct\Obj\stm32f4xx_hal_flash_ex.o
+#        D:\PKNU2020\StudyAVRFirmware\ARM\LED_Switct\EWARM\LED_Switct\Obj\stm32f4xx_hal_flash_ramfunc.o
+#        D:\PKNU2020\StudyAVRFirmware\ARM\LED_Switct\EWARM\LED_Switct\Obj\stm32f4xx_hal_gpio.o
+#        D:\PKNU2020\StudyAVRFirmware\ARM\LED_Switct\EWARM\LED_Switct\Obj\stm32f4xx_hal_msp.o
+#        D:\PKNU2020\StudyAVRFirmware\ARM\LED_Switct\EWARM\LED_Switct\Obj\stm32f4xx_hal_pwr.o
+#        D:\PKNU2020\StudyAVRFirmware\ARM\LED_Switct\EWARM\LED_Switct\Obj\stm32f4xx_hal_pwr_ex.o
+#        D:\PKNU2020\StudyAVRFirmware\ARM\LED_Switct\EWARM\LED_Switct\Obj\stm32f4xx_hal_rcc.o
+#        D:\PKNU2020\StudyAVRFirmware\ARM\LED_Switct\EWARM\LED_Switct\Obj\stm32f4xx_hal_rcc_ex.o
+#        D:\PKNU2020\StudyAVRFirmware\ARM\LED_Switct\EWARM\LED_Switct\Obj\stm32f4xx_hal_tim.o
+#        D:\PKNU2020\StudyAVRFirmware\ARM\LED_Switct\EWARM\LED_Switct\Obj\stm32f4xx_hal_tim_ex.o
+#        D:\PKNU2020\StudyAVRFirmware\ARM\LED_Switct\EWARM\LED_Switct\Obj\stm32f4xx_it.o
+#        D:\PKNU2020\StudyAVRFirmware\ARM\LED_Switct\EWARM\LED_Switct\Obj\system_stm32f4xx.o
 #        --redirect _Printf=_PrintfFull --redirect _Scanf=_ScanfFull
 #        --no_out_extension -o
-#        D:\PKNU2020\StudyAVR\ARM\LED_Switct\EWARM\LED_Switct\Exe\LED_Switct.out
+#        D:\PKNU2020\StudyAVRFirmware\ARM\LED_Switct\EWARM\LED_Switct\Exe\LED_Switct.out
 #        --map
-#        D:\PKNU2020\StudyAVR\ARM\LED_Switct\EWARM\LED_Switct\List\LED_Switct.map
+#        D:\PKNU2020\StudyAVRFirmware\ARM\LED_Switct\EWARM\LED_Switct\List\LED_Switct.map
 #        --config
-#        D:\PKNU2020\StudyAVR\ARM\LED_Switct\EWARM/stm32f405xx_flash.icf
+#        D:\PKNU2020\StudyAVRFirmware\ARM\LED_Switct\EWARM/stm32f405xx_flash.icf
 #        --semihosting --entry __iar_program_start --vfe --text_out locale)
 #
 ###############################################################################
@@ -232,7 +232,7 @@ command line/config:
     -------------------------------------------------
     Total:
 
-D:\PKNU2020\StudyAVR\ARM\LED_Switct\EWARM\LED_Switct\Obj: [1]
+D:\PKNU2020\StudyAVRFirmware\ARM\LED_Switct\EWARM\LED_Switct\Obj: [1]
     gpio.o                      168
     main.o                      264
     startup_stm32f405xx.o       720
@@ -349,7 +349,7 @@ uwTickFreq              0x2000'0000    0x1  Data  Gb  stm32f4xx_hal.o [1]
 uwTickPrio              0x2000'0008    0x4  Data  Gb  stm32f4xx_hal.o [1]
 
 
-[1] = D:\PKNU2020\StudyAVR\ARM\LED_Switct\EWARM\LED_Switct\Obj
+[1] = D:\PKNU2020\StudyAVRFirmware\ARM\LED_Switct\EWARM\LED_Switct\Obj
 [2] = dl7M_tln.a
 [3] = m7M_tls.a
 [4] = rt7M_tl.a
